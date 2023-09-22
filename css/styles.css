@@ -81,37 +81,54 @@ li{
  }
  /* Style for the menu list */
 .menu-list {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(253, 236, 236, 0.819);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    max-width: 400px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the menu list horizontally */
+    max-width: 400px; 
+    
 }
 
-/* Style for the table */
 .menu-list table {
     width: 100%;
+    
 }
 
-/* Style for table rows */
+
 .menu-list table tr {
-    border-bottom: 1px solid #ccc; /* Add a border between rows */
+    border-bottom: 1px solid #c1b9b9; /* Add a border between rows */
 }
 
 /* Style for table cells (columns) */
 .menu-list table td {
     padding: 10px;
     font-size: 18px;
+    color: #0c0404;
     text-align: left; /* Adjust alignment as needed */
+    width: 100%;
+    padding-right: 70px;
 }
 
 /* Style for the table heading (Menu Category) */
 .menu-list h2 {
     font-size: 24px;
-    color: #333;
+    color: #363333;
     margin-bottom: 10px;
+    font-family: "lora";
+    font-weight: bold;
+}
+/* Style for the centered menu section */
+.centered-menu-section {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Make sure it covers the entire viewport height */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
 }
 
-  
-  
+
+
+
