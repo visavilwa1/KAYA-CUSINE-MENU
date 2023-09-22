@@ -79,40 +79,29 @@ li{
     background-color: #12e4eb;
 
  }
- 
-.centered-menu-section {
+ /* Center the menu container horizontally and vertically */
+.menu-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Set the height to fill the viewport */
-    background-color: rgba(255,255,255,0.8);/* Background color for the menu section */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-    padding-left: 20px;
-    padding-right: 20px;
-   
-}
-
-/* Style for the wrapper inside the centered menu section */
-.centered-menu-section .wrapper {
-    text-align: center;
-   
-    /* Center align content within the wrapper */
-}
-
-/* Style for the headings of each menu section */
-.centered-menu-section h2 {
-    font-size: 24px; /* Adjust the font size */
-    color: #333; /* Text color for headings */
-    margin-bottom: 10px; /* Add space below headings */
-}
-
-/* Style for the menu items in each section */
-.centered-menu-section ul {
-    list-style-type: none; /* Remove bullet points from the list */
-    padding: 0; /* Remove default list padding */
-}
-
-.centered-menu-section li {
-    font-size: 18px; /* Adjust the font size of menu items */
-    margin-bottom: 5px; /* Add space between menu items */
-}
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Use the full viewport height */
+  }
+  
+  /* Style the menu list */
+  .menu-list {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .menu-list li {
+    margin: 10px 0;
+  }
+  
+  .menu-list a {
+    text-decoration: none;
+    color: #333;
+  }
+  @media (max-width: 768px) {
+    /* Add styles for smaller screens here */
+  }
+  
