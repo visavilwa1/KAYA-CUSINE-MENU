@@ -96,7 +96,7 @@ li{
 
 
 .menu-list table tr {
-    border-bottom: 1px solid #c1b9b9; /* Add a border between rows */
+    border-bottom: 1px solid #c1b9b9; 
 }
 
 /* Style for table cells (columns) */
