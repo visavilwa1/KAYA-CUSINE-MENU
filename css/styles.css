@@ -125,12 +125,11 @@ li{
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    min-height: 70vh; 
+    min-height: 80vh; 
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center; 
 }
-
 
 
 
