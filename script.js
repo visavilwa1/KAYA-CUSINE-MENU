@@ -1,10 +1,5 @@
+const header = document.querySelector("header");
 
-const categories = document.querySelectorAll('.category');
-const cardHeader = document.querySelector('.card-header');
-
-
-categories.forEach(category => {
-    category.addEventListener('mouseover', () => {
-        cardHeader.textContent = category.dataset.category.toUpperCase();
-    });
+window.addEventListener("scroll", function () {
+  header.classList.toogle("sticky", window.scrollY > 80);
 });
