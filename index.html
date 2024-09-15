@@ -12,7 +12,8 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,26 +57,25 @@
       </div>
     </section>
 
-    <!--container-->
-    <section class="container">
-      <div class="container-box">
-        <img src="./images/history.png" alt="" />
-        <h3>8:00 am - 8:00 pm</h3>
-        <a href="#">Working Hours</a>
-      </div>
-
-      <div class="container-box">
-        <img src="./images/location.png" alt="" />
-        <h3>Kaya Restaurant</h3>
-        <a href="#contact">Get Directions</a>
-      </div>
-
-      <div class="container-box">
-        <img src="./images/contact-us.png" alt="" />
-        <h3>(+254) 758408388</h3>
-        <a href="#contact">Call Us Now</a>
-      </div>
-    </section>
+ <section class="container">
+   <div class="container-box">
+     <img src="./images/history.png" alt="" />
+     <h3>8:00 am - 8:00 pm</h3>
+     <a href="#">Working Hours</a>
+   </div>
+ 
+   <div class="container-box">
+     <img src="./images/location.png" alt="" />
+     <h3>Kaya Restaurant</h3>
+     <a href="#contact">Get Directions</a>
+   </div>
+ 
+   <div class="container-box">
+     <img src="./images/contact-us.png" alt="" />
+     <h3>(+254) 758408388</h3>
+     <a href="#contact">Call Us Now</a>
+   </div>
+ </section>
 
     <!--about us-->
     <section class="about" id="about">
@@ -108,78 +108,93 @@
     </section>
 
     <!-- Our Menu -->
-    <section class="menu" id="menu">
-      <div class="middle-text">
-        <h4>Our Menu</h4>
-        <h1>Satisfy Your Taste Buds</h1>
-      </div>
-
-      <div class="menu-content">
-        <div class="row">
-          <img src="images/white coffe.png" alt="" />
-          <h3>white Coffee</h3>
-          <p>Experience the smooth and velvety richness of our White Coffee, </p>
-          <div class="in-text">
-            <div class="price">
-              <h6>Ksh. 200</h6>
-            </div>
-            <div class="s-btnn">
-              <a href="#">Order Now</a>
-            </div>
+  
+<section class="menu" id="menu">
+  <div class="middle-text">
+    <h4>Our Menu</h4>
+    <h1>Satisfy Your Taste Buds</h1>
+  </div>
+<!-- Swiper Container -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-wrapper"></div>
+      <!-- Swiper Slides -->
+      <div class="swiper-slide">
+        <img src="images/white coffe.png" alt="">
+        <h3>White Coffee</h3>
+        <p>Experience the smooth and velvety richness of our White Coffee.</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>Ksh. 200</h6>
           </div>
-
-          <div class="top-icon">
-            <a href="#"><i class='bx bx-heart'></i></a>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <img src="images/Rice beef.png" alt="" />
-          <h3>Rice Beef</h3>
-          <p> A culinary masterpiece that promises a burst of flavors in every bite</p>
-          <div class="in-text">
-            <div class="price">
-              <h6>Ksh.350 </h6>
-            </div>
-            <div class="s-btnn">
-              <a href="#">Order Now</a>
-            </div>
-          </div>
-
-          <div class="top-icon">
-            <a href="#"><i class='bx bx-heart'></i></a>
+          <div class="s-btnn">
+            <a href="#">Order Now</a>
           </div>
         </div>
-
-        <div class="row">
-          <img src="images/beef.png" alt="" />
-          <h3>  Beef</h3>
-          <p>Each mouthful is a journey through rich spices and succulent meat.</p>
-          <div class="in-text">
-            <div class="price">
-              <h6>Ksh. 300</h6>
-            </div>
-            <div class="s-btnn">
-              <a href="#">Order Now</a>
-            </div>
-          </div>
-
-          <div class="top-icon">
-            <a href="#"><i class='bx bx-heart'></i></a>
-          </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
         </div>
       </div>
-
-      
-
-      <div class="row-btn">
-        <a href="#" class="btn"
-          >View Menu<i class="bx bx-right-down-arrow-circle"></i
-        ></a>
-        
+    
+      <!-- Repeat the above div for each menu item -->
+      <!-- ... -->
+    
+      <!-- Add 4 more menu items here -->
+      <div class="swiper-slide">
+        <img src="images/menu-item-2.png" alt="">
+        <h3>Menu Item 2</h3>
+        <p>Description of Menu Item 2.</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>Ksh. 300</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order Now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
       </div>
-    </section>
+    
+      <div class="swiper-slide">
+        <img src="images/menu-item-3.png" alt="">
+        <h3>Menu Item 3</h3>
+        <p>Description of Menu Item 3.</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>Ksh. 400</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order Now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+    
+      <div class="swiper-slide">
+        <img src="images/menu-item-4.png" alt="">
+        <h3>Menu Item 4</h3>
+        <p>Description of Menu Item 4.</p>
+        <div class="in-text">
+          <div class="price">
+            <h6>Ksh. 500</h6>
+          </div>
+          <div class="s-btnn">
+            <a href="#">Order Now</a>
+          </div>
+        </div>
+        <div class="top-icon">
+          <a href="#"><i class='bx bx-heart'></i></a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+</section>
 
     <!--contact-->
     <sectin class="contact" id="contact">
@@ -208,7 +223,26 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 
 <!--js-->
-    <script src="script.js"></script>
+   
+    <script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+ <script src="script.js"></script>
   
   </body>
 

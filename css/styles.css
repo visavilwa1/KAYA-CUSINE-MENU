@@ -23,6 +23,7 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  overflow: hidden;
 }
 header {
   position: fixed;
@@ -70,7 +71,7 @@ header {
   align-items: center;
   padding: 8px 15px;
   background: var(--main-color);
-  box-shadow: #ff9f0d 0px 1px 25px;
+  box-shadow: #ff9f0d 0px 1px 2px;
 }
 .nav-icons i {
   vertical-align: middle;
@@ -102,16 +103,18 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  height: 100vh; /* Increase the height to 100vh */
+  padding-top: 5px; /* Add spacing between the home and header */
 }
 
 .home-text {
-  flex: 0 0 50%;
+  flex: 0 0 40%;
   max-width: 500px;
   color: #fff;
 }
 
 .home-text h1 {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -167,7 +170,7 @@ header.sticky {
 }
 
 .container {
-  padding: 30pxx 14% 70px;
+  padding: 10px 14% 70px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
@@ -175,7 +178,7 @@ header.sticky {
   text-align: center;
 }
 .container-box {
-  padding: 43px 43px 43px 43px;
+  padding: 20px 4px;
   background: var(--other-color);
   border-radius: 3rem;
 }
@@ -230,40 +233,123 @@ header.sticky {
   margin-bottom: 10px;
   color: var(--main-color);
 }
-.middle-text h1 {
-  font-size: var(--h2-font);
-  font-family: "Hedvig Letters Serif", serif;
+/* Menu Section */
+.menu {
+  padding: 50px 0;
+  background-color: #f9f9f9;
 }
-.menu-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  gap: 2rem;
-  align-items: center;
-  margin-top: 4rem;
+
+.menu .middle-text {
+  text-align: center;
+  margin-bottom: 30px;
 }
-.row {
-  position: relative;
-  padding: 10px 35px 40px;
-  background: var(--other-color);
-  border-radius: 3rem;
+
+.menu .middle-text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
 }
-.row img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.5s ease;
-  cursor: pointer;
-}
-.row h3 {
-  font-size: 18px;
-  margin-bottom: 5px;
+
+.menu .middle-text h1 {
+  font-size: 36px;
   font-weight: 700;
+  color: #333;
 }
-.row p {
-  color: var(--second-color);
-  font-size: var(--p-font);
-  line-height: 30px;
-  margin-bottom: 1.1rem;
+
+.menu .swiper-container {
+  padding: 0 30px;
+}
+
+.menu .swiper-slide {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.menu .swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+.menu .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.menu .swiper-slide h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+.menu .swiper-slide p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.menu .swiper-slide .in-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.menu .swiper-slide .in-text .price h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.menu .swiper-slide .in-text .s-btnn a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu .swiper-slide .in-text .s-btnn a:hover {
+  background-color: #ff3300;
+}
+
+.menu .swiper-slide .top-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.menu .swiper-slide .top-icon a {
+  display: inline-block;
+  color: #ff6600;
+  font-size: 20px;
+}
+
+.menu .row-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu .row-btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu .row-btn a:hover {
+  background-color: #ff3300;
 }
 .in-text {
   display: flex;
@@ -354,7 +440,6 @@ contact-text h2 {
   padding: 10px;
   border-radius: 2rem;
 }
-/* ... existing CSS code ... */
 
 @media (max-width: 300px) {
   header {
@@ -372,6 +457,8 @@ contact-text h2 {
   .home-text {
     padding-top: 0;
     text-align: center;
+    max-width: 200px;
+    color: #fff;
   }
 
   .home-img {
@@ -408,7 +495,7 @@ contact-text h2 {
   }
 
   .home {
-    height: 5vh;
+    height: 50vh;
   }
 }
 
